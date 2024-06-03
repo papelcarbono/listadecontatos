@@ -27,7 +27,7 @@ function adicionaLinha() {
     }
 
     inputNomeContato.value ='';
-    inputNumeroContato.valeu = '';
+    inputNumeroContato.value = '';
     }
 
     function atualizaTabela(){
