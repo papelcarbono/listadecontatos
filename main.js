@@ -13,6 +13,12 @@ function adicionaLinha() {
     const inputNomeContato = document.getElementById('nome');
     const inputNumeroContato = document.getElementById('telefone');
 
+    const numeroTelefone = inputNumeroContato.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+    if (!numeroTelefone || numeroTelefone.length !== 11) {
+        alert('Por favor, insira um número de telefone válido com 11 dígitos.');
+        return;
+    }
+
     if (telefones.includes(parseInt(inputNumeroContato.value))) {
         alert(`O Telefone: ${inputNumeroContato.value} já foi inserido`);
     } else {
