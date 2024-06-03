@@ -42,3 +42,32 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    form {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    label, input, button {
+        display: block;
+        margin: 5px auto;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
